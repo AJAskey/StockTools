@@ -1,0 +1,494 @@
+Symbol,Name,Exchange,Sector,Industry
+A,"Agilent Technologies, Inc.",NYSE,Health Care,Medical Equipment
+AAOI,Applied Optoelectronics Inc.,NASD,Technology,Telecom Equipment
+AAPL,"Apple, Inc.",NASD,Technology,Computer Hardware
+ABBV,AbbVie Inc.,NYSE,Health Care,Biotechnology
+ABNB,Airbnb Inc.,NASD,Consumer Discretionary,Travel & Tourism
+ABT,Abbott Laboratories,NYSE,Health Care,Pharmaceuticals
+ADI,"Analog Devices, Inc.",NASD,Technology,Semiconductors
+ADM,Archer Daniels Midland Co.,NYSE,Consumer Staples,Food Products
+ADP,"Automatic Data Processing, Inc.",NASD,Industrial,Business Support Services
+ADSK,"Autodesk, Inc.",NASD,Technology,Software
+AEHR,Aehr Test Systems,NASD,Technology,Semiconductors
+AEM,Agnico Eagle Mines Ltd.,NYSE,Materials,Gold Mining
+AER,AerCap Holdings NV,NYSE,Industrial,Transportation Services
+AFL,"Aflac, Inc.",NYSE,Financial,Life Insurance
+AFRM,Affirm Holdings Inc.,NASD,Technology,Computer Services
+AHR,American Healthcare REIT Inc.,NYSE,Real Estate,Specialty REITs
+AJG,Gallagher Arthur J & Co.,NYSE,Financial,Property-Casualty Insurance
+AKAM,"Akamai Technologies, Inc.",NASD,Technology,Software
+ALAB,Astera Labs Inc.,NASD,Technology,Semiconductors
+ALL,Allstate Corp.,NYSE,Financial,Property-Casualty Insurance
+ALLE,Allegion Public Ltd. Co.,NYSE,Industrial,Business Support Services
+ALLY,Ally Financial Inc.,NYSE,Financial,Banks
+AMAT,"Applied Materials, Inc.",NASD,Technology,Semiconductors
+AMD,"Advanced Micro Devices, Inc.",NASD,Technology,Semiconductors
+AME,"Ametek, Inc.",NYSE,Industrial,Diversified Industrials
+AMGN,"Amgen, Inc.",NASD,Health Care,Biotechnology
+AMKR,"Amkor Technology, Inc.",NASD,Technology,Semiconductors
+AMZN,"Amazon.com, Inc.",NASD,Consumer Discretionary,Broadline Retailers
+ANET,"Arista Networks, Inc.",NYSE,Technology,Telecom Equipment
+AON,Aon Corp.,NYSE,Financial,Insurance Brokers
+APA,APA Corporation,NASD,Energy,Exploration & Production
+APGE,Apogee Therapeutics Inc.,NASD,Health Care,Biotechnology
+APH,Amphenol Corp.,NYSE,Technology,Electrical Components
+APO,Apollo Global Management LLC,NYSE,Financial,Asset Managers
+AR,Antero Resources Corp.,NYSE,Energy,Exploration & Production
+ARES,"Ares Management, LP",NYSE,Financial,Specialty Finance
+ARM,Arm Holdings Plc,NASD,Technology,Semiconductors
+ARMK,Aramark,NYSE,Consumer Discretionary,Restaurants & Bars
+ASML,ASML Holding NV,NASD,Technology,Semiconductors
+ASND,Ascendis Pharma A/S,NASD,Health Care,Biotechnology
+ASX,Advanced Semiconductor,NYSE,Technology,Semiconductors
+ATI,Allegheny Technologies,NYSE,Materials,Steel
+AU,Anglogold Ashanti Ltd. ,NYSE,Materials,Gold Mining
+AVGO,Broadcom Inc.,NASD,Technology,Semiconductors
+AVT,"Avnet, Inc.",NASD,Technology,Electrical Components
+AWK,American Water Works Co. Inc.,NYSE,Utilities,Water
+AXTI,American Xtal Technology,NASD,Technology,Semiconductors
+BAC,Bank Of America Corp.,NYSE,Financial,Banks
+BAH,Booz Allen Hamilton Holding Corp.,NYSE,Industrial,Business Support Services
+BAM,Brookfield Asset Management Ltd.,NYSE,Financial,Asset Managers
+BAX,Baxter Intl Inc.,NYSE,Health Care,Medical Supplies
+BBH,VanEck Biotech ETF,NASD,,
+BBIO,BridgeBio Pharma Inc.,NASD,Health Care,Biotechnology
+BBY,"Best Buy Co, Inc.",NYSE,Consumer Discretionary,Specialty Retailers
+BDX,Becton Dickinson and Co.,NYSE,Health Care,Medical Supplies
+BE,Bloom Energy Corp.,NYSE,Industrial,Industrial Suppliers
+BEN,"Franklin Resources, Inc.",NYSE,Financial,Asset Managers
+BETA,BETA Technologies Inc.,NYSE,Industrial,Aerospace
+BHP,BHP Group Limited,NYSE,Materials,General Mining
+BIIB,Biogen Inc.,NASD,Health Care,Biotechnology
+BILL,Bill.com Holdings Inc.,NYSE,Technology,Software
+BKNG,Booking Holdings Inc.,NASD,Consumer Discretionary,Travel & Tourism
+BKR,Baker Hughes Company,NASD,Energy,Oil Equipment & Services
+BLK,"Blackrock, Inc.",NYSE,Financial,Asset Managers
+BMRN,"BioMarin Pharmaceutical, Inc.",NASD,Health Care,Biotechnology
+BMY,Bristol Myers Squibb Co.,NYSE,Health Care,Pharmaceuticals
+BNS,The Bank of Nova Scotia,NYSE,Financial,Banks
+BNY,Bank of New York Mellon Corp,NYSE,Financial,Asset Managers
+BP,BP Amoco PLC,NYSE,Energy,Integrated Oil & Gas
+BR,"Broadridge Financial Solutions, LLC",NYSE,Industrial,Business Support Services
+BSY,"Bentley Systems, Inc.",NASD,Technology,Software
+BTSG,BrightSpring Health Services Inc.,NASD,Health Care,Health Care Providers
+BUG,Global X Cybersecurity ETF,NASD,,
+BURL,"Burlington Stores, Inc.",NYSE,Consumer Discretionary,Apparel Retailers
+BWA,"BorgWarner, Inc.",NYSE,Consumer Discretionary,Auto Parts
+BX,Blackstone Group Inc.,NYSE,Financial,Asset Managers
+C,"Citigroup, Inc.",NYSE,Financial,Banks
+CAH,"Cardinal Health, Inc.",NYSE,Health Care,Medical Supplies
+CAKE,Cheesecake Factory Inc.,NASD,Consumer Discretionary,Restaurants & Bars
+CART,Maplebear Inc.,NASD,Consumer Discretionary,Special Consumer Services
+CAT,"Caterpillar, Inc.",NYSE,Industrial,Commercial Vehicles
+CAVA,Cava Group Inc.,NYSE,Consumer Discretionary,Restaurants & Bars
+CB,Chubb Ltd.,NYSE,Financial,Property-Casualty Insurance
+CBRE,"CBRE Group, Inc.",NYSE,Real Estate,Real Estate Services
+CCEP,Coca-Cola Europacific Partners Plc,NASD,Consumer Staples,Soft Drinks
+CDW,CDW Corp.,NASD,Technology,Computer Services
+CF,"CF Industries Holdings, Inc.",NYSE,Materials,Specialty Chemicals
+CFG,Citizens Financial Group Inc.,NYSE,Financial,Banks
+CFR,Cullen Frost Bankers Inc.,NYSE,Financial,Banks
+CGNX,Cognex Corp.,NASD,Technology,Electronic Equipment
+CHD,"Church & Dwight Co, Inc.",NYSE,Consumer Staples,Nondurable Home Products
+CHEF,"Chefs' Warehouse, Inc.",NASD,Consumer Staples,Food Retailers
+CHYM,Chime Financial Inc.,NASD,Financial,Consumer Finance
+CIEN,CIENA Corp.,NYSE,Technology,Telecom Equipment
+CLH,"Clean Harbors, Inc.",NYSE,Industrial,Waste & Disposal Services
+CLS,"Celestica, Inc.",NYSE,Technology,Electrical Components
+CNC,Centene Corp.,NYSE,Health Care,Health Care Providers
+CNQ,Canadian Natural Resources Ltd.,NYSE,Energy,Exploration & Production
+COF,Capital One Fncl Corp.,NYSE,Financial,Consumer Finance
+COHR,Coherent Corp.,NYSE,Technology,Electronic Equipment
+COLB,"Columbia Banking System, Inc.",NASD,Financial,Banks
+COP,ConocoPhillips,NYSE,Energy,Integrated Oil & Gas
+CORT,Corcept Therapeutics Inc.,NASD,Health Care,Pharmaceuticals
+CP,Canadian Pacific Kansas City Limited,NYSE,Industrial,Railroad
+CRBG,Corebridge Financial Inc.,NYSE,Financial,Specialty Finance
+CRDO,Credo Technology Group Holding Ltd.,NASD,Technology,Telecom Equipment
+CRL,Charles River Laboratorie,NYSE,Health Care,Biotechnology
+CRM,"Salesforce.com, Inc.",NYSE,Technology,Software
+CRNX,"Crinetics Pharmaceuticals, Inc.",NASD,Health Care,Pharmaceuticals
+CROX,"Crocs, Inc.",NASD,Consumer Discretionary,Footwear
+CRWD,"CrowdStrike Holdings, Inc.",NASD,Technology,Software
+CRWV,CoreWeave Inc.,NASD,Technology,Software
+CSCO,"Cisco Systems, Inc.",NASD,Technology,Telecom Equipment
+CSX,CSX Corp.,NASD,Industrial,Railroad
+CTAS,Cintas Corp.,NASD,Industrial,Business Support Services
+CTSH,Cognizant Technology Solutions Corp.,NASD,Technology,Computer Services
+CVE,Cenovus Energy Inc.,NYSE,Energy,Integrated Oil & Gas
+CVNA,Carvana Co.,NYSE,Consumer Discretionary,Specialty Retailers
+CVS,CVS Health Corp.,NYSE,Health Care,Pharmaceuticals
+CVX,Chevron Corp.,NYSE,Energy,Integrated Oil & Gas
+CYTK,Cytokinetics Inc.,NASD,Health Care,Biotechnology
+CZR,"Caesars Entertainment, Inc.",NASD,Consumer Discretionary,Gambling
+D,"Dominion Energy, Inc.",NYSE,Utilities,Multiutilities
+DAL,Delta Air Lines Inc.,NYSE,Industrial,Airlines
+DAR,Darling Ingredients Inc.,NYSE,Consumer Staples,Food Products
+DASH,DoorDash Inc.,NASD,Consumer Discretionary,Special Consumer Services
+DBX,"Dropbox, Inc.",NASD,Technology,Software
+DD,"DuPont de Nemours, Inc.",NYSE,Materials,Specialty Chemicals
+DDOG,Datadog Inc.,NASD,Technology,Software
+DE,Deere & Co.,NYSE,Industrial,Commercial Vehicles
+DELL,"Dell Technologies, Inc.",NYSE,Technology,Computer Hardware
+DGX,Quest Diagnostics Inc.,NYSE,Health Care,Health Care Providers
+DINO,HF Sinclair Corporation,NYSE,Energy,Exploration & Production
+DIOD,Diodes Inc.,NASD,Technology,Semiconductors
+DIS,Walt Disney Co.,NYSE,Communication Services,Entertainment
+DKNG,DraftKings Inc,NASD,Consumer Discretionary,Gambling
+DLR,"Digital Realty Trust, Inc.",NYSE,Real Estate,Specialty REITs
+DLTR,"Dollar Tree, Inc.",NASD,Consumer Staples,General Retailers
+DNTH,Dianthus Therapeutics Inc.,NASD,Health Care,Biotechnology
+DOCN,DigitalOcean Holdings Inc.,NYSE,Technology,Computer Services
+DOCU,"Docusign, Inc.",NASD,Technology,Software
+DRI,"Darden Restaurants, Inc.",NYSE,Consumer Discretionary,Restaurants & Bars
+DT,Dynatrace Inc.,NYSE,Technology,Software
+DVN,Devon Energy Corp.,NYSE,Energy,Exploration & Production
+DXCM,DexCom Inc.,NASD,Health Care,Medical Supplies
+EAT,"Brinker Intl, Inc.",NYSE,Consumer Discretionary,Restaurants & Bars
+EBAY,"eBay, Inc.",NASD,Consumer Discretionary,Special Consumer Services
+ELF,"e.l.f. Beauty, Inc.",NYSE,Consumer Staples,Personal Products
+ELV,"Elevance Health, Inc.",NYSE,Health Care,Health Care Providers
+EMBJ,Embraer Aircraft,NYSE,Industrial,Aerospace
+EMR,Emerson Electric Co.,NYSE,Industrial,Diversified Industrials
+ENS,EnerSys Inc.,NYSE,Technology,Electrical Components
+ENTG,"Entegris, Inc.",NASD,Technology,Semiconductors
+EOG,"EOG Resources, Inc.",NYSE,Energy,Exploration & Production
+EPD,Enterprise Products Partn,NYSE,Energy,Pipelines
+EQNR,Equinor ASA,NYSE,Energy,Integrated Oil & Gas
+ESI,Element Solutions Inc.,NYSE,Materials,Specialty Chemicals
+ESTC,Elastic NV,NYSE,Technology,Software
+ETN,Eaton Corp.,NYSE,Industrial,Diversified Industrials
+ETON,"Eton Pharmaceuticals, Inc.",NASD,Health Care,Pharmaceuticals
+ETSY,Etsy Inc.,NYSE,Consumer Discretionary,Special Consumer Services
+EW,Edwards Lifesciences Corp.,NYSE,Health Care,Medical Supplies
+EXEL,"Exelixis, Inc.",NASD,Health Care,Biotechnology
+EXPD,"Expeditors Intl of Washington, Inc.",NYSE,Industrial,Delivery Services
+EXPE,"Expedia, Inc",NASD,Consumer Discretionary,Travel & Tourism
+FANG,"Diamondback Energy, Inc.",NASD,Energy,Exploration & Production
+FAST,Fastenal Co.,NASD,Industrial,Industrial Suppliers
+FCX,"Freeport-McMoRan, Inc.",NYSE,Materials,Nonferrous Metals
+FDS,"Factset Research Sys, Inc.",NYSE,Financial,Investment Services
+FDX,FedEx Corp.,NYSE,Industrial,Delivery Services
+FHN,First Horizon National Corp.,NYSE,Financial,Banks
+FITB,Fifth Third Bancorp,NYSE,Financial,Banks
+FIVE,"Five Below, Inc.",NASD,Consumer Discretionary,Specialty Retailers
+FLEX,Flex Ltd.,NASD,Technology,Electrical Components
+FLR,Fluor Corp.,NYSE,Industrial,Heavy Construction
+FLS,Flowserve Corp.,NYSE,Industrial,Industrial Machinery
+FLY,Firefly Aerospace Inc.,NASD,Industrial,Aerospace
+FN,Fabrinet,NYSE,Technology,Electrical Components
+FORM,FormFactor Inc.,NASD,Technology,Semiconductors
+FOXA,Fox Corporation,NASD,Communication Services,Entertainment
+FROG,JFrog Ltd.,NASD,Technology,Software
+FSLY,"Fastly, Inc.",NASD,Technology,Software
+FTI,TechnipFMC Plc,NYSE,Energy,Oil Equipment & Services
+FTNT,Fortinet Inc.,NASD,Technology,Software
+FTV,Fortive Corp.,NYSE,Industrial,Diversified Industrials
+FWONK,Formula One Group,NASD,Communication Services,Entertainment
+GE,GE Aerospace,NYSE,Industrial,Diversified Industrials
+GEHC,GE HealthCare Technologies Inc.,NASD,Health Care,Medical Equipment
+GEN,Gen Digital Inc.,NASD,Technology,Software
+GEV,GE Vernova LLC,NYSE,Industrial,Industrial Machinery
+GH,Guardant Health Inc.,NASD,Health Care,Biotechnology
+GKOS,Glaukos Corp.,NYSE,Health Care,Medical Equipment
+GLNG,Golar LNG Ltd ,NASD,Energy,Oil Equipment & Services
+GLW,"Corning, Inc.",NYSE,Technology,Telecom Equipment
+GM,General Motors Co.,NYSE,Consumer Discretionary,Automobiles
+GMAB,Genmab A/S,NASD,Health Care,Biotechnology
+GOOG,Alphabet Inc. - Class C,NASD,Communication Services,Internet
+GOOGL,Alphabet Inc.,NASD,Communication Services,Internet
+GPC,Genuine Parts Co.,NYSE,Consumer Discretionary,Auto Parts
+GPN,"Global Payments, Inc.",NYSE,Financial,Financial Administration
+GS,"Goldman Sachs Group, Inc.",NYSE,Financial,Investment Services
+GTLB,Gitlab Inc.,NASD,Technology,Software
+GWRE,"Guidewire Software, Inc.",NYSE,Technology,Software
+HALO,Halozyme Therapeutics Inc.,NASD,Health Care,Biotechnology
+HAS,"Hasbro, Inc.",NASD,Consumer Discretionary,Toys
+HBM,Hudbay Minerals Inc.,NYSE,Materials,Nonferrous Metals
+HIMS,"Hims & Hers Health, Inc.",NYSE,Health Care,Health Care Providers
+HLT,Hilton Worldwide Holdings Inc.,NYSE,Consumer Discretionary,Hotels
+HNGE,Hinge Health Inc.,NYSE,Technology,Software
+HOOD,Robinhood Markets Inc.,NASD,Financial,Investment Services
+HPE,Hewlett Packard Enterprise Co.,NYSE,Technology,Computer Services
+HPQ,HP Inc.,NYSE,Technology,Computer Hardware
+HRB,"H & R Block, Inc.",NYSE,Consumer Discretionary,Special Consumer Services
+HSIC,"Henry Schein, Inc.",NASD,Health Care,Medical Supplies
+HTFL,Heartflow Inc.,NASD,Health Care,Biotechnology
+HUM,"Humana, Inc.",NYSE,Health Care,Health Care Providers
+HUT,Hut 8 Mining Corp.,NASD,Technology,Computer Services
+HWM,Howmet Aerospace Inc.,NYSE,Industrial,Diversified Industrials
+IBKR,"Interactive Brokers Group, Inc.",NASD,Financial,Investment Services
+ICE,"IntercontinentalExchange Group, Inc.",NYSE,Financial,Investment Services
+ILMN,"Illumina, Inc.",NASD,Health Care,Biotechnology
+INCY,Incyte Corp.,NASD,Health Care,Biotechnology
+INOD,Innodata Inc.,NASD,Technology,Computer Services
+INTC,Intel Corp.,NASD,Technology,Semiconductors
+INVH,Invitation Homes Inc.,NYSE,Real Estate,Real Estate Development
+IONQ,IonQ Inc.,NYSE,Technology,Computer Hardware
+IOT,Samsara Inc.,NYSE,Technology,Software
+IQV,"Iqvia Holdings, Inc.",NYSE,Health Care,Health Care Providers
+IREN,IREN Ltd.,NASD,Technology,Computer Services
+IRM,"Iron Mountain, Inc.",NYSE,Real Estate,Specialty REITs
+IT,"Gartner Group, Inc.",NYSE,Technology,Computer Services
+ITT,ITT Inc.,NYSE,Industrial,Industrial Machinery
+ITW,"Illinois Tool Works, Inc.",NYSE,Industrial,Industrial Machinery
+IVZ,Invesco Ltd.,NYSE,Financial,Asset Managers
+J,Jacobs Solutions Inc.,NYSE,Industrial,Heavy Construction
+JAZZ,"Jazz Pharmaceuticals, Inc.",NASD,Health Care,Pharmaceuticals
+JBHT,"J.B. Hunt Transport Services, Inc.",NASD,Industrial,Trucking
+JBL,"Jabil, Inc.",NYSE,Technology,Electrical Components
+JCI,Johnson Controls Intl plc,NYSE,Industrial,Building Materials
+JHX,James Hardie Industries NV,NYSE,Industrial,Building Materials
+JNJ,Johnson & Johnson,NYSE,Health Care,Pharmaceuticals
+JPM,J.P. Morgan Chase & Co.,NYSE,Financial,Banks
+KDP,Keurig Dr Pepper Inc.,NASD,Consumer Staples,Soft Drinks
+KEYS,Keysight Technologies Inc.,NYSE,Technology,Electronic Equipment
+KGS,Kodiak Gas Services Inc.,NYSE,Energy,Oil Equipment & Services
+KHC,Kraft Heinz Co.,NASD,Consumer Staples,Food Products
+KKR,KKR & Co Inc,NYSE,Financial,Specialty Finance
+KLAC,KLA Corp.,NASD,Technology,Semiconductors
+KMB,Kimberly Clark Corp.,NASD,Consumer Staples,Nondurable Home Products
+KMI,Kinder Morgan Inc.,NYSE,Energy,Pipelines
+KMX,Carmax Inc.,NYSE,Consumer Discretionary,Specialty Retailers
+KNX,Knight-Swift Transportation Holdings Inc.,NYSE,Industrial,Trucking
+KO,Coca Cola Co.,NYSE,Consumer Staples,Soft Drinks
+KTB,Kontoor Brands Inc.,NYSE,Consumer Discretionary,Clothing & Accessories
+LAMR,Lamar Advertising Co.,NASD,Real Estate,Specialty REITs
+LDOS,"Leidos Holdings, Inc.",NYSE,Industrial,Defense
+LGN,Legence Corp.,NASD,Industrial,Industrial Suppliers
+LITE,Lumentum Holdings Inc.,NASD,Technology,Telecom Equipment
+LLY,Eli Lilly & Co.,NYSE,Health Care,Pharmaceuticals
+LMT,Lockheed Martin Corp.,NYSE,Industrial,Defense
+LNG,"Cheniere Energy, Inc.",NYSE,Energy,Exploration & Production
+LNTH,"Lantheus Holdings, Inc.",NASD,Health Care,Medical Supplies
+LQDA,Liquidia Technologies Inc.,NASD,Health Care,Pharmaceuticals
+LRCX,Lam Research Corp.,NASD,Technology,Semiconductors
+LSCC,Lattice Semiconductor Corp.,NASD,Technology,Semiconductors
+LTH,Life Time Group Holdings Inc.,NYSE,Consumer Discretionary,Recreational Services
+LYB,LyondellBasell Industries NV,NYSE,Materials,Commodity Chemicals
+LYV,"Live Nation Entertainment, Inc.",NYSE,Communication Services,Entertainment
+MA,Mastercard,NYSE,Financial,Consumer Finance
+MANH,"Manhattan Associates, Inc.",NASD,Technology,Software
+MCO,Moody's Corp.,NYSE,Financial,Specialty Finance
+MDB,"MongoDB, Inc.",NASD,Technology,Software
+MDLZ,"Mondelez International, Inc.",NASD,Consumer Staples,Food Products
+MDT,"Medtronic, Inc.",NYSE,Health Care,Medical Equipment
+MET,"Metlife, Inc.",NYSE,Financial,Life Insurance
+MGNI,"Magnite, Inc",NASD,Technology,Software
+MKSI,"MKS Instruments, Inc.",NASD,Technology,Semiconductors
+MKTX,MarketAxess Holdings Inc.,NASD,Financial,Investment Services
+MLI,Mueller Industries Inc.,NYSE,Industrial,Industrial Machinery
+MMM,3M Co.,NYSE,Industrial,Diversified Industrials
+MNDY,Monday.com Ltd.,NASD,Technology,Software
+MNST,Monster Beverage Corp.,NASD,Consumer Staples,Soft Drinks
+MOH,"Molina Healthcare, Inc.",NYSE,Health Care,Health Care Providers
+MP,MP Materials Corp.,NYSE,Materials,General Mining
+MPC,Marathon Petroleum Corp.,NYSE,Energy,Integrated Oil & Gas
+MRK,"Merck & Co., Inc.",NYSE,Health Care,Pharmaceuticals
+MRNA,Moderna Inc.,NASD,Health Care,Pharmaceuticals
+MRSH,Marsh and McLennan Co.,NYSE,Financial,Insurance Brokers
+MRVL,Marvell Technology Inc,NASD,Technology,Semiconductors
+MS,Morgan Stanley,NYSE,Financial,Investment Services
+MSFT,Microsoft Corp.,NASD,Technology,Software
+MSI,Motorola Solutions Inc.,NYSE,Technology,Telecom Equipment
+MSM,Msc Industrial Direct Co.,NYSE,Industrial,Industrial Suppliers
+MT,ArcelorMittal SA,NYSE,Materials,Steel
+MTB,M&T Bank Corp.,NYSE,Financial,Banks
+MTCH,"Match Group, Inc",NASD,Communication Services,Internet
+MTDR,Matador Resources Co.,NYSE,Energy,Exploration & Production
+MTSI,"MACOM Technology Solutions Holdings, Inc.",NASD,Technology,Semiconductors
+MU,"Micron Technology, Inc.",NASD,Technology,Semiconductors
+MXL,MaxLinear Inc.,NASD,Technology,Semiconductors
+NBIS,Nebius Group N.V.,NASD,Communication Services,Internet
+NBIX,"Neurocrine Biosciences, Inc.",NASD,Health Care,Biotechnology
+NDAQ,"Nasdaq, Inc.",NASD,Financial,Investment Services
+NEM,Newmont Corporation,NYSE,Materials,Gold Mining
+NET,Cloudflare Inc.,NYSE,Technology,Software
+NOW,"ServiceNow, Inc.",NYSE,Technology,Software
+NSC,Norfolk Southern Corp.,NYSE,Industrial,Railroad
+NTAP,NetApp Inc.,NASD,Technology,Computer Hardware
+NTNX,"Nutanix, Inc.",NASD,Technology,Software
+NTRA,"Natera, Inc.",NASD,Health Care,Medical Supplies
+NTRS,Northern Trust Corp.,NASD,Financial,Asset Managers
+NUE,Nucor Corp.,NYSE,Materials,Steel
+NVDA,NVIDIA Corp.,NASD,Technology,Semiconductors
+NVT,nVent Electric plc.,NYSE,Technology,Electronic Equipment
+OC,Owens Corning Inc.,NYSE,Industrial,Building Materials
+OKE,"Oneok, Inc.",NYSE,Energy,Pipelines
+OKTA,"Okta, Inc.",NASD,Technology,Software
+OMC,"Omnicom Group, Inc.",NYSE,Communication Services,Media Agencies
+ONTO,Onto Innovation Inc,NYSE,Technology,Semiconductors
+OPLN,"OPENLANE, Inc.",NYSE,Consumer Discretionary,Special Consumer Services
+ORKA,"Oruka Therapeutics, Inc.",NASD,Health Care,Pharmaceuticals
+OSCR,Oscar Health Inc.,NYSE,Health Care,Health Care Providers
+OUST,"Ouster, Inc.",NASD,Technology,Electronic Equipment
+OVV,Ovintiv Inc,NYSE,Energy,Exploration & Production
+OXY,Occidental Petroleum Corp.,NYSE,Energy,Exploration & Production
+P,Everpure Inc.,NYSE,Technology,Computer Hardware
+PANW,Palo Alto Networks Inc.,NASD,Technology,Telecom Equipment
+PAYC,"Paycom Software, Inc.",NYSE,Industrial,Business Support Services
+PAYX,"Paychex, Inc.",NASD,Industrial,Business Support Services
+PBF,PBF Energy Inc.,NYSE,Energy,Exploration & Production
+PCAR,"PACCAR, Inc.",NASD,Industrial,Commercial Vehicles
+PCOR,Procore Technologies Inc.,NYSE,Technology,Software
+PCTY,Paylocity Holding Corp.,NASD,Technology,Software
+PENG,"Penguin Solutions, Inc.",NASD,Technology,Semiconductors
+PFE,"Pfizer, Inc.",NYSE,Health Care,Pharmaceuticals
+PFGC,Performance Food Group Co.,NYSE,Consumer Staples,Food Retailers
+PLTR,"Palantir Technologies, Inc.",NASD,Technology,Software
+PM,Philip Morris Intl Inc.,NYSE,Consumer Staples,Tobacco
+PNC,PNC Financial Services Gr,NYSE,Financial,Banks
+PRMB,Primo Brands Corp.,NYSE,Consumer Staples,Soft Drinks
+PRMW,Primo Water Corporation,NYSE,Consumer Staples,Soft Drinks
+PRU,Prudential Financial Inc.,NYSE,Financial,Life Insurance
+PSA,"Public Storage, Inc.",NYSE,Real Estate,Specialty REITs
+PSX,Phillips 66,NYSE,Energy,Integrated Oil & Gas
+PTC,"PTC, Inc.",NASD,Technology,Software
+PWR,"Quanta Services, Inc.",NYSE,Industrial,Heavy Construction
+PYPL,"PayPal Holdings, Inc.",NASD,Financial,Consumer Finance
+Q,Qnity Electronics Inc.,NYSE,Technology,Semiconductors
+QCOM,QUALCOMM Inc.,NASD,Technology,Semiconductors
+QLYS,"Qualys, Inc.",NASD,Technology,Software
+QMCO,Quantum Corp.,NASD,Technology,Computer Hardware
+QRVO,"Qorvo, Inc.",NASD,Technology,Semiconductors
+QSR,Restaurant Brands International Inc.,NYSE,Consumer Discretionary,Restaurants & Bars
+RBRK,Rubrik Inc.,NYSE,Technology,Computer Services
+RDDT,Reddit Inc.,NYSE,Communication Services,Internet
+RELY,Remitly Global Inc.,NASD,Financial,Specialty Finance
+RF,Regions Financial Corp.,NYSE,Financial,Banks
+RGEN,Repligen Corp.,NASD,Health Care,Biotechnology
+RHP,"Ryman Hospitality Properties, Inc.",NYSE,Real Estate,Hotel & Lodging REITs
+RIO,Rio Tinto PLC,NYSE,Materials,General Mining
+RJF,Raymond James Financial Inc.,NYSE,Financial,Investment Services
+RKLB,"Rocket Lab USA, Inc.",NASD,Industrial,Aerospace
+ROIV,Roivant Sciences Ltd.,NASD,Health Care,Biotechnology
+ROKU,"Roku, Inc.",NASD,Technology,Computer Hardware
+ROP,"Roper Technologies, Inc.",NASD,Technology,Software
+ROST,"Ross Stores, Inc.",NASD,Consumer Discretionary,Apparel Retailers
+RPRX,Royalty Pharma Plc,NASD,Health Care,Biotechnology
+RTX,Raytheon Technologies Corp.,NYSE,Industrial,Aerospace
+RVMD,Revolution Medicines Inc,NASD,Health Care,Biotechnology
+RVTY,Revvity Inc.,NYSE,Health Care,Medical Supplies
+RY,Royal Bank Of Canada,NYSE,Financial,Banks
+SAP,SAP SE,NYSE,Technology,Software
+SBUX,Starbucks Corp.,NASD,Consumer Discretionary,Restaurants & Bars
+SCCO,Southern Copper Corp.,NYSE,Materials,Nonferrous Metals
+SCHW,Charles Schwab Corp.,NYSE,Financial,Investment Services
+SE,Sea Ltd.,NYSE,Technology,Computer Services
+SEI,"Solaris Energy Infrastructure, Inc.",NYSE,Energy,Oil Equipment & Services
+SEZL,Sezzle Inc.,NASD,Financial,Financial Administration
+SFM,Sprouts Farmers Market Inc.,NASD,Consumer Staples,Food Retailers
+SHEL,Shell Plc,NYSE,Energy,Integrated Oil & Gas
+SHOP,"Shopify, Inc.",NASD,Technology,Software
+SHW,Sherwin Williams Co.,NYSE,Materials,Specialty Chemicals
+SIMO,Silicon Motion Technology Corp. ADS,NASD,Technology,Semiconductors
+SIRI,Sirius XM Holdings Inc.,NASD,Communication Services,Entertainment
+SJM,The J. M. Smucker Co.,NYSE,Consumer Staples,Food Products
+SKM,SKTelecom Co. Ltd.,NYSE,Communication Services,Mobile Telecommunications
+SLB,SLB Ltd.,NYSE,Energy,Oil Equipment & Services
+SM,SM Energy Co.,NYSE,Energy,Exploration & Production
+SMCI,"Super Micro Computer, Inc",NASD,Technology,Computer Hardware
+SMH,VanEck Semiconductor ETF,NASD,,
+SMTC,Semtech Corp.,NASD,Technology,Semiconductors
+SN,SharkNinja Inc.,NYSE,Consumer Discretionary,Durable Household Products
+SNDK,Sandisk Corp.,NASD,Technology,Semiconductors
+SNEX,StoneX Group Inc.,NASD,Financial,Investment Services
+SNOW,Snowflake Inc.,NYSE,Technology,Software
+SOLV,Solventum Corp.,NYSE,Health Care,Medical Supplies
+SPG,"Simon Property Group, Inc.",NYSE,Real Estate,Retail REITs
+SPHR,Sphere Entertainment Co.,NYSE,Communication Services,Entertainment
+SPOT,Spotify Technology S.A.,NYSE,Communication Services,Internet
+SSNC,SS & C Technologies Holdings Inc.,NASD,Technology,Software
+STLD,"Steel Dynamics, Inc.",NASD,Materials,Steel
+STM,STMicroelectronics NV,NYSE,Technology,Semiconductors
+STRL,"Sterling Infrastructure, Inc.",NASD,Industrial,Heavy Construction
+STT,State Street Corp.,NYSE,Financial,Asset Managers
+STX,"Seagate Technology Holdings, Inc.",NASD,Technology,Computer Hardware
+SU,"Suncor Energy, Inc.",NYSE,Energy,Integrated Oil & Gas
+SUNB,Sunbelt Rentals Holdings Inc.,NYSE,Industrial,Building Materials
+SW,Smurfit Westrock Plc,NYSE,Materials,Containers & Packaging
+SWK,Stanley Black & Decker Inc.,NYSE,Industrial,Diversified Industrials
+SWKS,Skyworks Solutions Inc.,NASD,Technology,Semiconductors
+SYF,Synchrony Financial,NYSE,Financial,Consumer Finance
+TD,Toronto Dominion Bank,NYSE,Financial,Banks
+TEAM,Atlassian Corp.,NASD,Technology,Software
+TECH,Bio-Techne Corporation,NASD,Health Care,Biotechnology
+TECK,Teck Resources Ltd.,NYSE,Materials,Nonferrous Metals
+TER,"Teradyne, Inc.",NASD,Technology,Semiconductors
+TEVA,Teva Pharmaceutical Industries Ltd.,NYSE,Health Care,Pharmaceuticals
+TFC,Truist Financial Corporation,NYSE,Financial,Banks
+TFX,"Teleflex, Inc.",NYSE,Health Care,Medical Supplies
+TGT,Target Corp.,NYSE,Consumer Staples,General Retailers
+THC,Tenet Healthcare Corp.,NYSE,Health Care,Health Care Providers
+TIGO,Millicom Intl Cellular S.A.,NASD,Communication Services,Mobile Telecommunications
+TKO,"TKO Group Holdings, Inc.",NYSE,Communication Services,Entertainment
+TKR,Timken Co.,NYSE,Industrial,Industrial Machinery
+TMO,Thermo Fisher Scientific Inc.,NYSE,Health Care,Medical Equipment
+TOST,Toast Inc.,NYSE,Technology,Computer Services
+TPG,TPG Inc.,NASD,Financial,Asset Managers
+TRGP,Targa Resources Corp.,NYSE,Energy,Exploration & Production
+TRI,Thomson Reuters Corp.,NASD,Communication Services,Publishing
+TROW,"T. Rowe Price Associates, Inc.",NASD,Financial,Asset Managers
+TRU,TransUnion.com,NYSE,Financial,Specialty Finance
+TRV,"The Travelers Cos., Inc.",NYSE,Financial,Property-Casualty Insurance
+TSEM,Tower Semiconductor Ltd.,NASD,Technology,Semiconductors
+TSM,Taiwan Semiconductor Mfg,NYSE,Technology,Semiconductors
+TT,Trane Technologies Inc,NYSE,Industrial,Building Materials
+TTAN,ServiceTitan Inc.,NASD,Technology,Software
+TTE,TotalEnergies SE,NYSE,Energy,Integrated Oil & Gas
+TTEK,Tetra Tech Inc.,NASD,Industrial,Waste & Disposal Services
+TTMI,"TTM Technologies, Inc.",NASD,Technology,Electrical Components
+TTWO,"Take-Two Interactive Software, Inc.",NASD,Communication Services,Internet
+TWLO,Twilio Inc.,NYSE,Technology,Software
+TWST,Twist Bioscience Corp.,NASD,Health Care,Biotechnology
+TXG,10x Genomics Inc.,NASD,Health Care,Medical Equipment
+TXN,"Texas Instruments, Inc.",NASD,Technology,Semiconductors
+TXRH,Texas Roadhouse Inc.,NASD,Consumer Discretionary,Restaurants & Bars
+U,Unity Software Inc.,NYSE,Technology,Software
+UAL,United Airlines Holdings Inc.,NASD,Industrial,Airlines
+UBER,"Uber Technologies, Inc.",NYSE,Industrial,Transportation Services
+UCTT,Ultra Clean Holdings Inc.,NASD,Technology,Semiconductors
+UNH,"Unitedhealth Group, Inc.",NYSE,Health Care,Health Care Providers
+UNM,Unum Group,NYSE,Financial,Life Insurance
+UNP,Union Pacific Corp.,NYSE,Industrial,Railroad
+USB,US Bancorp,NYSE,Financial,Banks
+USFD,US Foods Holding Corp.,NYSE,Consumer Staples,Food Retailers
+V,Visa Inc.,NYSE,Financial,Consumer Finance
+VAL,Valaris Ltd.,NYSE,Energy,Oil Equipment & Services
+VEEV,Veeva Systems Inc.,NYSE,Technology,Software
+VIAV,Viavi Solutions Inc.,NASD,Technology,Telecom Equipment
+VICR,Vicor Corp.,NASD,Technology,Electrical Components
+VIK,Viking Holdings Ltd.,NYSE,Consumer Discretionary,Recreational Services
+VIRT,"Virtu Financial, Inc.",NYSE,Financial,Investment Services
+VLO,Valero Energy Corp,NYSE,Energy,Exploration & Production
+VLTO,Veralto Corp.,NYSE,Industrial,Diversified Industrials
+VRT,"Vertiv Holdings, LLC",NYSE,Industrial,Industrial Suppliers
+VRTX,Vertex Pharmaceuticals Inc.,NASD,Health Care,Biotechnology
+VSAT,"ViaSat, Inc.",NASD,Technology,Telecom Equipment
+VSH,"Vishay Intertech, Inc.",NYSE,Technology,Electrical Components
+VSXY,Victoria's Secret & Co.,NYSE,Consumer Discretionary,Apparel Retailers
+VTR,"Ventas, Inc.",NYSE,Real Estate,Specialty REITs
+VZ,Verizon Communications,NYSE,Communication Services,Fixed Telecommunications
+W,Wayfair Inc.,NYSE,Consumer Discretionary,Home Improvement Retailers
+WAB,Westinghouse Air Brake Technologies Corporation,NYSE,Industrial,Commercial Vehicles
+WBD,Warner Bros. Discovery Inc.,NASD,Communication Services,Entertainment
+WBS,Webster Financial Corp.,NYSE,Financial,Banks
+WDAY,"Workday, Inc.",NASD,Technology,Software
+WDC,Western Digital Corp.,NASD,Technology,Computer Hardware
+WELL,Welltower Inc.,NYSE,Real Estate,Specialty REITs
+WES,"Western Midstream Partners, LP",NYSE,Energy,Exploration & Production
+WFC,Wells Fargo & Co.,NYSE,Financial,Banks
+WIX,Wix.com Ltd.,NASD,Technology,Software
+WMB,"Williams Cos., Inc.",NYSE,Energy,Pipelines
+WPM, Wheaton Precious Metals Corp.,NYSE,Materials,Nonferrous Metals
+WSM,"Williams Sonoma, Inc.",NYSE,Consumer Discretionary,Specialty Retailers
+WTW,Willis Towers Watson Public Ltd. Co. ,NASD,Financial,Insurance Brokers
+XOM,Exxon Mobil Corp.,NYSE,Energy,Integrated Oil & Gas
+XPO,"XPO Logistics, Inc.",NYSE,Industrial,Transportation Services
+XYZ,"Block, Inc.",NYSE,Financial,Consumer Finance
+ZBH,"Zimmer Biomet Holdings, Inc.",NYSE,Health Care,Medical Equipment
+ZBRA,Zebra Technologies Corp.,NASD,Technology,Electronic Equipment
+ZETA,Zeta Global Holdings Corp.,NYSE,Technology,Software
+ZIM,Zim Integrated Shipping Services Ltd.,NYSE,Industrial,Marine Transportation
+ZM,"Zoom Communications, Inc.",NASD,Technology,Computer Services
+ZS,"Zscaler, Inc.",NASD,Technology,Software

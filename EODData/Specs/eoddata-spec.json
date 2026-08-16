@@ -1,0 +1,2482 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "EODData API",
+    "description": "Modern API that provides access to historical market data from a selection of leading global exchanges. To get started you will need to <a href=\"https://eoddata.com/register.aspx\">REGISTER</a> for an account and authenticate your requests. Using our API you can download quotes, dividends, fundamentals, technical indicators, splits, and much more.<br/><br/><h4>Authentication</h4>Simply append 'apiKey=[yourApiKey]' to all of your requests.<br/>Get your ApiKey from <a href=\"https://eoddata.com/myaccount/api.aspx\" title=\"Get your ApiKey\" target=\"_blank\">HERE</a>",
+    "version": "v1"
+  },
+  "paths": {
+    "/ExchangeType/List": {
+      "get": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "ExchangeType List",
+        "description": "Returns a list of Exchange Types",
+        "operationId": "ExchangeTypeList",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NameOnly"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/SymbolType/List": {
+      "get": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "SymbolType List",
+        "description": "Returns a list of Symbol Types",
+        "operationId": "SymbolTypeList",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/NameOnly"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Country/List": {
+      "get": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "Country List",
+        "description": "Returns a list of Countries",
+        "operationId": "CountryList",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodeName"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Currency/List": {
+      "get": {
+        "tags": [
+          "Metadata"
+        ],
+        "summary": "Currency List",
+        "description": "Returns a list of Currencies",
+        "operationId": "CurrencyList",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/CodeName"
+                  }
+                }
+              }
+            }
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Exchange/List": {
+      "get": {
+        "tags": [
+          "Exchanges"
+        ],
+        "summary": "Exchange List",
+        "description": "Returns a list of available Exchanges",
+        "operationId": "ExchangeList",
+        "parameters": [
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Exchange"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Exchange/Get/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Exchanges"
+        ],
+        "summary": "Exchange Get",
+        "description": "Returns information about a selected Exchange",
+        "operationId": "ExchangeGet",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Exchange"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Symbol/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Symbols"
+        ],
+        "summary": "Symbol List",
+        "description": "Returns a list of available Symbols for a given Exchange",
+        "operationId": "SymbolList",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Symbol"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Symbol/Get/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Symbols"
+        ],
+        "summary": "Symbol Get",
+        "description": "Returns information about a selected Symbol",
+        "operationId": "SymbolGet",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Symbol"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Symbol/Search/{searchString}": {
+      "get": {
+        "tags": [
+          "Symbols"
+        ],
+        "summary": "Symbol Search",
+        "description": "Returns a list of Symbols that match your search criteria. Exchange, Symbol, Industry, Sector, Country, Currency, and Symbol Type are all referenced in the search. Search string can be a sentence of search words, for example 'NASDAQ AAP', 'Technology Apple', or 'US Tech AA'. ",
+        "operationId": "SymbolSearch",
+        "parameters": [
+          {
+            "name": "searchString",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/SearchResult"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Profile/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Symbol Profile List",
+        "description": "Returns a list of Symbol Profiles for a given Exchange",
+        "operationId": "ProfileListByExchangeCode",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Profile2"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Profile/Get/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Symbol Profile Get",
+        "description": "Returns profile information about a selected Symbol",
+        "operationId": "ProfileGetBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Profile2"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Splits/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Split List by Exchange",
+        "description": "Returns a list of recent Splits for a given Exchange",
+        "operationId": "SplitListByExchange",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Split"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Splits/List/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Split List by Symbol",
+        "description": "Returns a list of Splits for a given Symbol",
+        "operationId": "SplitListBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Split"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Dividends/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Dividend List by Exchange",
+        "description": "Returns a list of Dividends for a given Exchange",
+        "operationId": "DividendListByExchange",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Dividend"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Dividends/List/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Corporate"
+        ],
+        "summary": "Dividend List by Symbol",
+        "description": "Returns a list of Dividends for a given Symbol",
+        "operationId": "DividendListBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Dividend"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Quote/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "summary": "Quote List By Exchange",
+        "description": "Returns a list of Quotes for a given Exchange [and Date]",
+        "operationId": "QuoteListByExchange",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "DateStamp",
+            "in": "query",
+            "description": "Date in yyyy-MM-dd format",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Quote"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Quote/Get/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "summary": "Quote Get",
+        "description": "Returns a Quote for a given Symbol [and Date]",
+        "operationId": "QuoteGetBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "DateStamp",
+            "in": "query",
+            "description": "Date in yyyy-MM-dd format",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Quote"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Quote/List/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Quotes"
+        ],
+        "summary": "Quote List by Symbol",
+        "description": "Returns a list of Quotes for a given Symbol [and Date Range]",
+        "operationId": "QuoteListBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Interval",
+            "in": "query",
+            "description": "Interval: '1', '5', '10', '15', '30', 'h', 'd', 'w', 'm', 'q', 'y'",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "FromDateStamp",
+            "in": "query",
+            "description": "From Date in yyyy-MM-dd format",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ToDateStamp",
+            "in": "query",
+            "description": "To Date in yyyy-MM-dd format",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Quote"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Fundamental/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Fundamental Data"
+        ],
+        "summary": "Fundamental List",
+        "description": "Returns a list of Fundamentals for a given Exchange",
+        "operationId": "FundamentalListByExchangeCode",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Fundamental2"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Fundamental/Get/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Fundamental Data"
+        ],
+        "summary": "Fundamental Get",
+        "description": "Return Fundamental data for a given Exchange and Symbol",
+        "operationId": "FundamentalGetBySymbolCode",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Fundamental2"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Technical/List/{exchangeCode}": {
+      "get": {
+        "tags": [
+          "Technical Indicators"
+        ],
+        "summary": "Technical List",
+        "description": "Returns a list of Technical Indicators for a given Exchange",
+        "operationId": "TechnicalListByExchangeCode",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Technical2"
+                  }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    },
+    "/Technical/Get/{exchangeCode}/{symbolCode}": {
+      "get": {
+        "tags": [
+          "Technical Indicators"
+        ],
+        "summary": "Technical Get",
+        "description": "Return Technical data for a given Exchange and Symbol",
+        "operationId": "TechnicalGetBySymbol",
+        "parameters": [
+          {
+            "name": "exchangeCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "symbolCode",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "ApiKey",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Technical2"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "429": {
+            "description": "Too Many Requests"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CodeName": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "Dividend": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "dateStamp": {
+            "type": "string",
+            "description": "Date in yyyy-MM-dd format"
+          },
+          "paymentDateStamp": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double"
+          },
+          "source": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Exchange": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "dateStamp": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "timeZone": {
+            "type": "string"
+          },
+          "mic": {
+            "type": "string"
+          },
+          "suffix": {
+            "type": "string",
+            "nullable": true
+          },
+          "symbols": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Symbol"
+            },
+            "nullable": true
+          },
+          "quotes": {
+            "type": "array",
+            "items": {},
+            "nullable": true
+          },
+          "splits": {
+            "type": "array",
+            "items": {},
+            "nullable": true
+          },
+          "dividends": {
+            "type": "array",
+            "items": {},
+            "nullable": true
+          }
+        }
+      },
+      "Fundamental": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "marketCapitalization": {
+            "type": "number",
+            "format": "double"
+          },
+          "ebitda": {
+            "type": "number",
+            "format": "double"
+          },
+          "peg": {
+            "type": "number",
+            "format": "double"
+          },
+          "bookValue": {
+            "type": "number",
+            "format": "double"
+          },
+          "dividendPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "dividendYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "earningsPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "revenuePerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceToSales": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceToBook": {
+            "type": "number",
+            "format": "double"
+          },
+          "beta": {
+            "type": "number",
+            "format": "double"
+          },
+          "sharesOutstanding": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dividendDate": {
+            "type": "string"
+          },
+          "grossMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "profitMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "operatingMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "returnOnAssets": {
+            "type": "number",
+            "format": "double"
+          },
+          "returnOnEquity": {
+            "type": "number",
+            "format": "double"
+          },
+          "revenue": {
+            "type": "number",
+            "format": "double"
+          },
+          "grossProfit": {
+            "type": "number",
+            "format": "double"
+          },
+          "trailingPE": {
+            "type": "number",
+            "format": "double"
+          },
+          "forwardPE": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCash": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCashPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalDebt": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalDebtToEquity": {
+            "type": "number",
+            "format": "double"
+          },
+          "bookValuePerShare": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "nullable": true
+      },
+      "Fundamental2": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "marketCapitalization": {
+            "type": "number",
+            "format": "double"
+          },
+          "ebitda": {
+            "type": "number",
+            "format": "double"
+          },
+          "peg": {
+            "type": "number",
+            "format": "double"
+          },
+          "bookValue": {
+            "type": "number",
+            "format": "double"
+          },
+          "dividendPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "dividendYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "earningsPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "revenuePerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceToSales": {
+            "type": "number",
+            "format": "double"
+          },
+          "priceToBook": {
+            "type": "number",
+            "format": "double"
+          },
+          "beta": {
+            "type": "number",
+            "format": "double"
+          },
+          "sharesOutstanding": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "dividendDate": {
+            "type": "string"
+          },
+          "grossMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "profitMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "operatingMargin": {
+            "type": "number",
+            "format": "double"
+          },
+          "returnOnAssets": {
+            "type": "number",
+            "format": "double"
+          },
+          "returnOnEquity": {
+            "type": "number",
+            "format": "double"
+          },
+          "revenue": {
+            "type": "number",
+            "format": "double"
+          },
+          "grossProfit": {
+            "type": "number",
+            "format": "double"
+          },
+          "trailingPE": {
+            "type": "number",
+            "format": "double"
+          },
+          "forwardPE": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCash": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalCashPerShare": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalDebt": {
+            "type": "number",
+            "format": "double"
+          },
+          "totalDebtToEquity": {
+            "type": "number",
+            "format": "double"
+          },
+          "bookValuePerShare": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      },
+      "NameOnly": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "Profile": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "figi": {
+            "type": "string",
+            "nullable": true
+          },
+          "isin": {
+            "type": "string",
+            "nullable": true
+          },
+          "cusip": {
+            "type": "string",
+            "nullable": true
+          },
+          "cik": {
+            "type": "string",
+            "nullable": true
+          },
+          "lei": {
+            "type": "string",
+            "nullable": true
+          },
+          "sector": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "about": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "nullable": true
+      },
+      "Profile2": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "figi": {
+            "type": "string",
+            "nullable": true
+          },
+          "isin": {
+            "type": "string",
+            "nullable": true
+          },
+          "cusip": {
+            "type": "string",
+            "nullable": true
+          },
+          "cik": {
+            "type": "string",
+            "nullable": true
+          },
+          "lei": {
+            "type": "string",
+            "nullable": true
+          },
+          "sector": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "about": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Quote": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "interval": {
+            "type": "string",
+            "description": "d,w,m,q,y,1,5,10,15,30,h",
+            "nullable": true
+          },
+          "dateStamp": {
+            "type": "string",
+            "description": "Date in yyyy-MM-dd [HH:mm] format"
+          },
+          "open": {
+            "type": "number",
+            "format": "double"
+          },
+          "high": {
+            "type": "number",
+            "format": "double"
+          },
+          "low": {
+            "type": "number",
+            "format": "double"
+          },
+          "close": {
+            "type": "number",
+            "format": "double"
+          },
+          "adjustedClose": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "volume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "openInterest": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "bid": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ask": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "previous": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "change": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "SearchResult": {
+        "type": "object",
+        "properties": {
+          "symbolGuid": {
+            "type": "string"
+          },
+          "exchangeCode": {
+            "type": "string"
+          },
+          "exchangeName": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "symbolName": {
+            "type": "string"
+          },
+          "symbolType": {
+            "type": "string"
+          },
+          "figi": {
+            "type": "string"
+          },
+          "isin": {
+            "type": "string"
+          },
+          "cusip": {
+            "type": "string"
+          },
+          "currency": {
+            "type": "string"
+          },
+          "country": {
+            "type": "string"
+          },
+          "industry": {
+            "type": "string"
+          },
+          "sector": {
+            "type": "string"
+          },
+          "last": {
+            "type": "number",
+            "format": "double"
+          },
+          "matches": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "Split": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "dateStamp": {
+            "type": "string",
+            "description": "Date in yyyy-MM-dd format"
+          },
+          "ratio": {
+            "type": "string"
+          },
+          "multiplier": {
+            "type": "number",
+            "format": "double"
+          },
+          "source": {
+            "type": "string",
+            "nullable": true
+          }
+        }
+      },
+      "Symbol": {
+        "type": "object",
+        "properties": {
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "exchangeCode": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "currency": {
+            "type": "string",
+            "nullable": true
+          },
+          "figi": {
+            "type": "string",
+            "nullable": true
+          },
+          "dateStamp": {
+            "type": "string"
+          },
+          "open": {
+            "type": "number",
+            "format": "double"
+          },
+          "high": {
+            "type": "number",
+            "format": "double"
+          },
+          "low": {
+            "type": "number",
+            "format": "double"
+          },
+          "close": {
+            "type": "number",
+            "format": "double"
+          },
+          "volume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "openInterest": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "previous": {
+            "type": "number",
+            "format": "double"
+          },
+          "change": {
+            "type": "number",
+            "format": "double"
+          },
+          "bid": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ask": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "quotes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Quote"
+            },
+            "nullable": true
+          },
+          "splits": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Split"
+            },
+            "nullable": true
+          },
+          "dividends": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Dividend"
+            },
+            "nullable": true
+          },
+          "profile": {
+            "$ref": "#/components/schemas/Profile"
+          },
+          "fundamental": {
+            "$ref": "#/components/schemas/Fundamental"
+          },
+          "technical": {
+            "$ref": "#/components/schemas/Technical"
+          }
+        }
+      },
+      "Technical": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "quarterChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "biannualChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "ytdChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weekAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weekAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monthAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monthAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "yearAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "yearAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "macd": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Fast": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Slow": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Full": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Fast": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Slow": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Full": {
+            "type": "number",
+            "format": "double"
+          },
+          "rsI9": {
+            "type": "number",
+            "format": "double"
+          },
+          "rsI14": {
+            "type": "number",
+            "format": "double"
+          },
+          "wpR14": {
+            "type": "number",
+            "format": "double"
+          },
+          "mtM14": {
+            "type": "number",
+            "format": "double"
+          },
+          "roC14": {
+            "type": "number",
+            "format": "double"
+          },
+          "upperBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "lowerBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "bandwidthBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "obV20": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "aD20": {
+            "type": "number",
+            "format": "double"
+          },
+          "aroon20": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiPositive": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiNegative": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiAverage": {
+            "type": "number",
+            "format": "double"
+          },
+          "atr": {
+            "type": "number",
+            "format": "double"
+          },
+          "cci": {
+            "type": "number",
+            "format": "double"
+          },
+          "sar": {
+            "type": "number",
+            "format": "double"
+          },
+          "volatility": {
+            "type": "number",
+            "format": "double"
+          },
+          "liquidity": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "nullable": true
+      },
+      "Technical2": {
+        "type": "object",
+        "properties": {
+          "exchangeCode": {
+            "type": "string"
+          },
+          "symbolCode": {
+            "type": "string"
+          },
+          "quarterChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "biannualChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "ytdChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weekAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "weekAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "weekYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monthAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "monthAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "monthYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearLow": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearHigh": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "yearAvgVolume": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "yearAvgChange": {
+            "type": "number",
+            "format": "double"
+          },
+          "yearYield": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "mA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "wmA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA5": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA10": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA20": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA50": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA100": {
+            "type": "number",
+            "format": "double"
+          },
+          "emA200": {
+            "type": "number",
+            "format": "double"
+          },
+          "macd": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Fast": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Slow": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO9Full": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Fast": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Slow": {
+            "type": "number",
+            "format": "double"
+          },
+          "stO14Full": {
+            "type": "number",
+            "format": "double"
+          },
+          "rsI9": {
+            "type": "number",
+            "format": "double"
+          },
+          "rsI14": {
+            "type": "number",
+            "format": "double"
+          },
+          "wpR14": {
+            "type": "number",
+            "format": "double"
+          },
+          "mtM14": {
+            "type": "number",
+            "format": "double"
+          },
+          "roC14": {
+            "type": "number",
+            "format": "double"
+          },
+          "upperBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "lowerBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "bandwidthBB20": {
+            "type": "number",
+            "format": "double"
+          },
+          "obV20": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "aD20": {
+            "type": "number",
+            "format": "double"
+          },
+          "aroon20": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiPositive": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiNegative": {
+            "type": "number",
+            "format": "double"
+          },
+          "dmiAverage": {
+            "type": "number",
+            "format": "double"
+          },
+          "atr": {
+            "type": "number",
+            "format": "double"
+          },
+          "cci": {
+            "type": "number",
+            "format": "double"
+          },
+          "sar": {
+            "type": "number",
+            "format": "double"
+          },
+          "volatility": {
+            "type": "number",
+            "format": "double"
+          },
+          "liquidity": {
+            "type": "number",
+            "format": "double"
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "Customer",
+      "description": "Includes the ability to Login using your credentials and gain a bearer token that can be included in your request headers to authenticate your requests."
+    },
+    {
+      "name": "Exchanges",
+      "description": "Download the list of available Exchanges or retrieve specific information for a given Exchange. All of our data is segregated by Exchange, for example 'NASDAQ' Exchange information includes code, name, currency, timezone, country, etc"
+    },
+    {
+      "name": "Symbols",
+      "description": "API Methods for downloading lists of available Symbols for each Exchange or retrieve specific information for a given Symbol."
+    },
+    {
+      "name": "Quotes",
+      "description": "Returns current and 30+ years of historical data in OHLCV (Open, High, Low, Close, Volume, [OpenInterest]) format. A full range of time intervals is available: 1min, 5min, 10min, 15min, 30min, Hourly, Daily, Weekly, Monthly, Quarterly, Yearly"
+    },
+    {
+      "name": "Corporate",
+      "description": "More detailed information about each symbol including: description, address, FIGI, CUSIP, ISIN, etc. Corporate actions: Splits and Dividends."
+    },
+    {
+      "name": "Fundamental Data",
+      "description": "This group of endpoints provide Fundamental Data such as PE, EPS, Dividend Yield, Market Capitalization, Shares Outstanding and much more."
+    },
+    {
+      "name": "Technical Data",
+      "description": "Endpoints which return our pre-built selection of technical indicators that include: MA5, MA20, STO9, RSI14, WPR14, MTM14, etc"
+    },
+    {
+      "name": "Metadata",
+      "description": "All Metadata related operations"
+    }
+  ]
+}
