@@ -8,7 +8,7 @@ AA,Alcoa Corp.,NYSE,Materials,Aluminum
 
 The symbol and the exchange will be needed to make the call to EOD data. I have working prototypes of a simple tests of this in files eodapi-scratch.py and eod-scratch2.py.
 
-My personal API token for EOD data is API_TOKEN = "xNrqzn9LHldoTDrvin683LoM".
+My personal API token for EOD data is API_TOKEN = "".
 
 The EOD data specification document is in this JSON file : "E:\Working\Prototypes\EODData\Specs\eoddata-spec.json"
 Additional EODData information is found in this file "E:\Working\Prototypes\EODData\Specs\EODData.md"
