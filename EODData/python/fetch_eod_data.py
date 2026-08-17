@@ -7,10 +7,12 @@ import time
 from datetime import datetime, timedelta
 import requests
 
-API_TOKEN = ""
+API_TOKEN = "xNrqzn9LHldoTDrvin683LoM"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(BASE_DIR, "data", "stocks.csv")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+DATA_DIR = os.path.join(BASE_DIR, "data")
+JSON_DIR = os.path.join(DATA_DIR, "json")
 
 EXCHANGE_MAPPING = {
     "NASD": "NASDAQ",
@@ -28,7 +30,7 @@ def fetch_quotes_with_retry(exchange: str, symbol: str, start_str: str, end_str:
     api_symbol = symbol.replace("/", ".")
     url = f"https://api.eoddata.com/Quote/List/{mapped_exchange}/{api_symbol}?ApiKey={API_TOKEN}&Interval=d&FromDateStamp={start_str}&ToDateStamp={end_str}"
     
-    backoff = 1.0
+    backoff = 2.5
     for attempt in range(1, max_retries + 1):
         try:
             response = requests.get(url, timeout=15)
@@ -60,7 +62,9 @@ def fetch_quotes_with_retry(exchange: str, symbol: str, start_str: str, end_str:
     return None
 
 def main():
-    os.makedirs(OUTPUT_DIR, exist_ok=True)
+    os.makedirs(OUTPUT_DIR, exist_ok=True) 
+    os.makedirs(DATA_DIR, exist_ok=True)
+    os.makedirs(JSON_DIR, exist_ok=True)
     
     end_date = datetime.now()
     # 370 calendar days will cover ~250 trading days including weekends and holidays
@@ -98,12 +102,13 @@ def main():
             continue
             
         filename = f"{sanitize_filename(symbol)}.json"
-        out_filepath = os.path.join(OUTPUT_DIR, filename)
+        json_filepath = os.path.join(JSON_DIR, filename)
+
         
         # Check if already downloaded and valid
-        if os.path.exists(out_filepath):
+        if os.path.exists(json_filepath):
             try:
-                with open(out_filepath, "r", encoding="utf-8") as existing_f:
+                with open(json_filepath, "r", encoding="utf-8") as existing_f:
                     existing_data = json.load(existing_f)
                     if existing_data.get("data_count", 0) >= 200:
                         successful += 1
@@ -121,7 +126,7 @@ def main():
             # Keep the last 250 trading days
             quotes_250 = quotes[-250:] if len(quotes) > 250 else quotes
             
-            output_data = {
+            json_output_data = {
                 "symbol": symbol,
                 "name": name,
                 "exchange": exchange,
@@ -131,8 +136,8 @@ def main():
                 "data": quotes_250
             }
             
-            with open(out_filepath, "w", encoding="utf-8") as out_f:
-                json.dump(output_data, out_f, indent=2)
+            with open(json_filepath, "w", encoding="utf-8") as out_f:
+                json.dump(json_output_data, out_f, indent=2)
                 
             successful += 1
             if idx % 25 == 0 or idx == total_stocks:

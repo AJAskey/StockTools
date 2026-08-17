@@ -8,6 +8,7 @@ import talib
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
+JSON_DIR = os.path.join(BASE_DIR, "data", "json")
 CSV_PATH = os.path.join(OUTPUT_DIR, "ta-lib.csv")
 
 CSV_HEADERS = [
@@ -130,7 +131,7 @@ def main():
         print(f"Error: Output directory '{OUTPUT_DIR}' does not exist.")
         sys.exit(1)
 
-    json_files = [f for f in os.listdir(OUTPUT_DIR) if f.endswith(".json")]
+    json_files = [f for f in os.listdir(JSON_DIR) if f.endswith(".json")]
     json_files.sort()
     
     total_files = len(json_files)
@@ -141,7 +142,7 @@ def main():
     processed_count = 0
     
     for filename in json_files:
-        filepath = os.path.join(OUTPUT_DIR, filename)
+        filepath = os.path.join(JSON_DIR, filename)
         row = process_ticker_file(filepath)
         if row:
             rows.append(row)
