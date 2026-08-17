@@ -7,7 +7,7 @@ import time
 from datetime import datetime, timedelta
 import requests
 
-API_TOKEN = "xNrqzn9LHldoTDrvin683LoM"
+API_TOKEN = os.getenv("EODDATA_API_TOKEN")
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CSV_PATH = os.path.join(BASE_DIR, "data", "stocks.csv")
 OUTPUT_DIR = os.path.join(BASE_DIR, "output")
